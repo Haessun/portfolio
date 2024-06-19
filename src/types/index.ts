@@ -43,6 +43,7 @@ export interface DataProps {
   };
   information: InformationProps;
   publications: PublicationsProps[];
+  workExperience: WorkExperienceProps[];
   activity: {
     id: number;
     name: string;

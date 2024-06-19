@@ -46,9 +46,9 @@
     {
       "id": 3,
       "name": "Uniform Information Density in Music: A Neural Network-Based Approach",
-      "webUrl": "https://arxiv.org/abs/2401.15323",
+      "webUrl": "",
       "author": "Minju Kim*, Haesun Joung* and Kyogu Lee",
-      "conference": "Arxiv Preprint",
+      "conference": "Under Review",
       "stack": ["Music Analysis", "Information Theory"],
       "abstract": "In the field of Music Information Retrieval (MIR), analyzing musical structures and patterns is paramount for understanding the complexity and expressiveness inherent in music. This paper explores how music achieves a balanced flow of information, applying the concept of Uniform Information Density (UID) as previously described by musicologist David Temperly, to reveal underlying patterns in diverse musical compositions. By employing LSTM networks trained on datasets comprising jazz chord progressions from the Realbook dataset and monophonic melodies from Gregorian chant, we investigate the manifestation of UID across different musical aspects. We developed a metric to measure the uniformity of information distribution within these pieces, thereby providing empirical evidence of UID's presence in music. Additionally, we conducted permutation tests to statistically validate the observed uniformity of information density. Through empirical evidence and statistical validation, our study underscores UID's significant role in the structural and aesthetic consistency of musical compositions, offering new perspectives on music analysis within the MIR domain."
     }

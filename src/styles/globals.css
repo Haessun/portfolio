@@ -4,11 +4,11 @@
 
 @layer base {
   h1 {
-    @apply font-semibold text-5xl py-2;
+    @apply font-semibold text-5xl py-1;
   }
 
   h2 {
-    @apply font-semibold text-4xl py-2;
+    @apply font-semibold text-4xl py-1;
   }
 
   h3 {
@@ -28,12 +28,12 @@
 
   .markdown h1,
   .markdown h2 {
-    @apply pt-4 pb-2;
+    @apply pt-2 pb-1;
   }
 
   .markdown h3,
   .markdown h4 {
-    @apply pt-4 pb-2;
+    @apply pt-2 pb-1;
   }
 
   strong {
@@ -54,11 +54,11 @@
 
   ul,
   ol {
-    @apply flex flex-col gap-2 py-2 ml-4 list-outside list-disc;
+    @apply flex flex-col gap-2 py-1 ml-4 list-outside list-disc;
   }
 
   li ul {
-    @apply pt-2;
+    @apply pt-1;
   }
 }
 
@@ -73,4 +73,11 @@
 .transform {
   display: inline-block;
   transition: transform 0.2s;
+}
+
+.reduced-spacing {
+  margin-top: 1px; /* Adjust as needed */
+  margin-bottom: 1px; /* Adjust as needed */
+  padding-top: 1px; /* Adjust as needed */
+  padding-bottom: 1px; /* Adjust as needed */
 }

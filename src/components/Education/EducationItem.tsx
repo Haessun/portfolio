@@ -4,6 +4,7 @@ const EducationItem = ({ name, description, period }: {
   period: string[];
 }) => {
   return (
+    // <div className="flex flex-col md:flex-row gap-2 md:gap-1 reduced-spacing">
     <div className="flex flex-col md:flex-row gap-2 md:gap-1">
       <div className="flex flex-col gap-1">
         <div className="flex flex-col">

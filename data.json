@@ -31,7 +31,8 @@
       "webUrl": "https://arxiv.org/abs/2307.14718",
       "author": "Ahyeon Choi, Eunsik Shin, Haesun Joung, Joongseek Lee and Kyogu Lee",
       "conference": "24th International Society for Music Information Retrieval Conference (ISMIR 2023) (Oral, Poster)",
-      "stack": ["Music", "HCI"]
+      "stack": ["Music", "HCI"],
+      "abstract": "In light of the enduring success of music streaming services, it is noteworthy that an increasing number of users are positively gravitating toward YouTube as their preferred platform for listening to music. YouTube differs from typical music streaming services in that they provide a diverse range of music-related videos as well as soundtracks. However, despite the increasing popularity of using YouTube as a platform for music consumption, there is still a lack of comprehensive research on this phenomenon. As independent researchers unaffiliated with YouTube, we conducted semi-structured interviews with 27 users who listen to music through YouTube more than three times a week to investigate its usability and interface satisfaction. Our qualitative analysis found that YouTube has five main meanings for users as a music streaming service: 1) exploring musical diversity, 2) sharing unique playlists, 3) providing visual satisfaction, 4) facilitating user interaction, and 5) allowing free and easy access. We also propose wireframes of a video streaming service for better audio-visual music listening in two stages: search and listening. By these wireframes, we offer practical solutions to enhance user satisfaction with YouTube for music listening. These findings have wider implications beyond YouTube and could inform enhancements in other music streaming services as well."
     },
     {
       "id": 2,
@@ -39,7 +40,8 @@
       "webUrl": "https://arxiv.org/abs/2401.15323",
       "author": "Haesun Joung and Kyogu Lee",
       "conference": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2024) (Poster)",
-      "stack": ["Music Auto-Tagging", "Domain Adversarial Training"]
+      "stack": ["Music Auto-Tagging", "Domain Adversarial Training"],
+      "abstract": "Music auto-tagging is crucial for enhancing music discovery and recommendation. Existing models in Music Information Retrieval (MIR) struggle with real-world noise such as environmental and speech sounds in multimedia content. This study proposes a method inspired by speech-related tasks to enhance music auto-tagging performance in noisy settings. The approach integrates Domain Adversarial Training (DAT) into the music domain, enabling robust music representations that withstand noise. Unlike previous research, this approach involves an additional pretraining phase for the domain classifier, to avoid performance degradation in the subsequent phase. Adding various synthesized noisy music data improves the model's generalization across different noise levels. The proposed architecture demonstrates enhanced performance in music auto-tagging by effectively utilizing unlabeled noisy music data. Additional experiments with supplementary unlabeled data further improves the model's performance, underscoring its robust generalization capabilities and broad applicability."
     },
     {
       "id": 3,
@@ -47,7 +49,8 @@
       "webUrl": "https://arxiv.org/abs/2401.15323",
       "author": "Minju Kim*, Haesun Joung* and Kyogu Lee",
       "conference": "Arxiv Preprint",
-      "stack": ["Music Analysis", "Information Theory"]
+      "stack": ["Music Analysis", "Information Theory"],
+      "abstract": "In the field of Music Information Retrieval (MIR), analyzing musical structures and patterns is paramount for understanding the complexity and expressiveness inherent in music. This paper explores how music achieves a balanced flow of information, applying the concept of Uniform Information Density (UID) as previously described by musicologist David Temperly, to reveal underlying patterns in diverse musical compositions. By employing LSTM networks trained on datasets comprising jazz chord progressions from the Realbook dataset and monophonic melodies from Gregorian chant, we investigate the manifestation of UID across different musical aspects. We developed a metric to measure the uniformity of information distribution within these pieces, thereby providing empirical evidence of UID's presence in music. Additionally, we conducted permutation tests to statistically validate the observed uniformity of information density. Through empirical evidence and statistical validation, our study underscores UID's significant role in the structural and aesthetic consistency of musical compositions, offering new perspectives on music analysis within the MIR domain."
     }
   ],
 

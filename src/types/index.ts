@@ -55,5 +55,11 @@ export interface DataProps {
     description: string;
     period: string[];
   }[];
+  certificate: {
+    id: number;
+    name: string;
+    date: string;
+    organizer: string;
+  }[];
   music: MusicProps[];
 }

@@ -20,7 +20,7 @@ const Information = ({ information }: Pick<DataProps, "information">) => {
               />
           }
         <h1 className="leading-[1.15]">
-          Music AI Engineer 🎶
+          Music AI Researcher 🎶
           <br />
           <span className="text-PRIMARY_NAME font-semibold">{"Haesun Joung"}</span>
         </h1>

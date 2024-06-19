@@ -5,7 +5,7 @@ import Divider from "./Divider";
 const SectionTitle = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <h2>{children}.</h2>
+      <h3>{children}.</h3>
       <Divider />
     </>
   );

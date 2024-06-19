@@ -15,25 +15,26 @@ export interface WorkExperienceProps {
   imgSrc?: string;
 }
 
-export interface ProjectProps {
+export interface PublicationsProps {
   id: number;
   name: string;
-  description: string;
+  abstract: string;
   repoUrl: string;
   webUrl?: string;
-  isTeam?: boolean;
-  period: string[];
+  author: string;
+  conference: string;
   stack: string[];
   markdown?: string;
   imgSrc?: string;
 }
 
-export interface AwardProps {
+export interface MusicProps {
   id: number;
   name: string;
   date: string;
   organizer: string;
   description: string;
+  stack: string[];
 }
 
 export interface DataProps {
@@ -41,8 +42,7 @@ export interface DataProps {
     title: string;
   };
   information: InformationProps;
-  workExperience: WorkExperienceProps[];
-  project: ProjectProps[];
+  publications: PublicationsProps[];
   activity: {
     id: number;
     name: string;
@@ -55,11 +55,5 @@ export interface DataProps {
     description: string;
     period: string[];
   }[];
-  certificate: {
-    id: number;
-    name: string;
-    date: string;
-    organizer: string;
-  }[];
-  award: AwardProps[];
+  music: MusicProps[];
 }

@@ -1,6 +1,6 @@
-import { AwardProps } from "@/types";
+import { MusicProps } from "@/types";
 
-const AwardItem = ({ name, date, organizer, description }: AwardProps) => {
+const MusicItem = ({ name, date, organizer, description }: MusicProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-6 md:gap-0">
       <div className="flex flex-col gap-2">
@@ -15,4 +15,4 @@ const AwardItem = ({ name, date, organizer, description }: AwardProps) => {
   );
 };
 
-export default AwardItem;
+export default MusicItem;

@@ -1,7 +1,1 @@
-- Hoo-ooh-ooh-ooh
-- Hoo-ooh-ooh-ooh
-- Stay in the middle
-- Like you a little
-- Don't want no riddle
-- 말해줘 say it back, oh, say it ditto
-- 아침은 너무 멀어 so say it ditto
+- Interested in music representation through deep learning for music analysis, generation, and AI-assisted co-creation with a human-in-the-loop focus.

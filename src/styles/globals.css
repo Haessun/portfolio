@@ -61,3 +61,16 @@
     @apply pt-2;
   }
 }
+
+.text-primary {
+  color: #000000;
+}
+
+.text-primary:hover {
+  text-decoration: underline;
+}
+
+.transform {
+  display: inline-block;
+  transition: transform 0.2s;
+}

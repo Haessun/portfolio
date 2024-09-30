@@ -1,1 +1,1 @@
-- Interested in __*music representation*__ through deep learning for `music auto-tagging`, `music analysis`, `generation`, and `AI-assisted co-creation` with a human-in-the-loop focus.
+- Interested in __*music representation*__ through deep learning for `music auto-tagging & captioning`, `music analysis`, `generation`, and `AI-assisted co-creation` with a human-in-the-loop focus.

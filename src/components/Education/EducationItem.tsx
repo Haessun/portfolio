@@ -9,7 +9,7 @@ const EducationItem = ({ name, description, period, thesis, researchArea }: {
 
   return (
     // <div className="flex flex-col md:flex-row gap-2 md:gap-1 reduced-spacing">
-    <div className="flex flex-col md:flex-row gap-2 md:gap-1 mb-4">
+    <div className="flex flex-col md:flex-row gap-2 md:gap-1 mb-1">
       <div className="flex flex-col gap-1">
         <div className="flex flex-col">
           <h4>
@@ -21,7 +21,18 @@ const EducationItem = ({ name, description, period, thesis, researchArea }: {
           <span>{`${period[0]}${period[1] ? " - " + period[1] : ""}`}</span>
         </div>
         {description && <span className="whitespace-pre-wrap">{description}</span>}
-        {thesis && <span className="whitespace-pre-wrap">{thesis}</span>}
+        {thesis && (
+          <span className="whitespace-pre-wrap">
+            {thesis.startsWith("Thesis:") ? (
+              <>
+                <strong>Thesis:</strong>{" "}
+                {thesis.replace(/^Thesis:\s*/, "")}
+              </>
+            ) : (
+              thesis
+            )}
+          </span>
+        )}
         {researchArea && <span className="whitespace-pre-wrap">{researchArea}</span>}
       </div>
     </div>

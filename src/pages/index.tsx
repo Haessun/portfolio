@@ -9,8 +9,11 @@ import Information from "@/components/Information";
 import Layout from "@/components/Layout";
 import Publications from "@/components/Publications";
 import ResumeTitle from "@/components/ResumeTitle";
+import TeachingExperience from "@/components/TeachingExperience";
+import WorkExperience from "@/components/WorkExperience";
+
 // import ScrollProgress from "@/components/ScrollProgress";
-import { DataProps, InformationProps, PublicationsProps } from "@/types";
+import { DataProps, InformationProps, PublicationsProps, WorkExperienceProps, TeachingExperienceProps } from "@/types";
 import Music from "@/components/Music";
 import AdditionalSkills from "@/components/AdditionalSkills/AdditionalSkills";
 
@@ -19,6 +22,8 @@ const Home: NextPage<DataProps> = ({
   information,
   publications,
   education,
+  workExperience,
+  teachingExperience,
   music,
 }) => {
   return (
@@ -27,10 +32,13 @@ const Home: NextPage<DataProps> = ({
       <ResumeTitle resumeTitle={resumeTitle} />
       <Layout>
         <Information information={information} />
+        <Education education={education} />
+        <WorkExperience workExperience={workExperience}/>
         {/* <WorkExperience workExperience={workExperience} /> */}
         <Publications publications={publications} />
         {/* <Activity activity={activity} /> */}
-        <Education education={education} />
+        <TeachingExperience teachingExperience={teachingExperience} />
+
         {/* <Certificate certificate={certificate} /> */}
         <AdditionalSkills />
         {/* <Music music={music} /> */}

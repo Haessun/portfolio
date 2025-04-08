@@ -13,6 +13,39 @@
     ]
   },
 
+  "education": [
+    {
+      "id": 0,
+      "name": "Kaywon Arts High School",
+      "period": ["2013. 03", "2016. 02"],
+      "description": "Major in Music Composition"
+    },
+    {
+      "id": 1,
+      "name": "B.S. in Musicology and Computer Science & Engineering @ Seoul National University",
+      "period": ["2016. 03", "2021. 08"]
+    },
+    {
+      "id": 2,
+      "name": "M.S. in Intelligence and Information @ Seoul National University",
+      "period": ["2021. 09", "2023. 08"],
+      "thesis": "Music Auto-tagging in Multimedia Content using Robust Music Representation Learned via Domain Adversarial Training"
+    },
+    {
+      "id": 3,
+      "name": "Ph.D. in Intelligence and Information @ Seoul National University",
+      "period": ["2023. 09", "Recent"],
+      "researchArea": "Music Captioning via Reinforcement Learning, Musical Instrument/Timbre Retrieval, Music HCI"
+    }
+  ],
+
+  "workExperience": {
+    "id": 0,
+    "name": "Research Intern @ NAVER VIBE AI",
+    "period": ["2025. 01", "2025. 02"],
+    "description": "Music genre auto-tagging for tag noise reduction"
+  },
+
   "publications": [
     {
       "id": 0,
@@ -27,9 +60,8 @@
     {
       "id": 1,
       "name": "Towards a New Interface for Music Listening: A User Experience Study on YouTube",
-      "description": "프로젝트에 대한 간단한 설명을 적을 수 있습니다. 어떤 프로젝트인지 주제나 강조하고 싶은 부분을 적어보세요.",
       "webUrl": "https://arxiv.org/abs/2307.14718",
-      "author": "Ahyeon Choi, Eunsik Shin, Haesun Joung, Joongseek Lee and Kyogu Lee",
+      "author": "Ahyeon Choi, Eunsik Shin, Haesun Joung*, Joongseek Lee and Kyogu Lee",
       "conference": "24th International Society for Music Information Retrieval Conference (ISMIR 2023) (Oral, Poster)",
       "stack": ["Music", "HCI"],
       "abstract": "In light of the enduring success of music streaming services, it is noteworthy that an increasing number of users are positively gravitating toward YouTube as their preferred platform for listening to music. YouTube differs from typical music streaming services in that they provide a diverse range of music-related videos as well as soundtracks. However, despite the increasing popularity of using YouTube as a platform for music consumption, there is still a lack of comprehensive research on this phenomenon. As independent researchers unaffiliated with YouTube, we conducted semi-structured interviews with 27 users who listen to music through YouTube more than three times a week to investigate its usability and interface satisfaction. Our qualitative analysis found that YouTube has five main meanings for users as a music streaming service: 1) exploring musical diversity, 2) sharing unique playlists, 3) providing visual satisfaction, 4) facilitating user interaction, and 5) allowing free and easy access. We also propose wireframes of a video streaming service for better audio-visual music listening in two stages: search and listening. By these wireframes, we offer practical solutions to enhance user satisfaction with YouTube for music listening. These findings have wider implications beyond YouTube and could inform enhancements in other music streaming services as well."
@@ -42,35 +74,24 @@
       "conference": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2024) (Poster)",
       "stack": ["Music Auto-Tagging", "Domain Adversarial Training"],
       "abstract": "Music auto-tagging is crucial for enhancing music discovery and recommendation. Existing models in Music Information Retrieval (MIR) struggle with real-world noise such as environmental and speech sounds in multimedia content. This study proposes a method inspired by speech-related tasks to enhance music auto-tagging performance in noisy settings. The approach integrates Domain Adversarial Training (DAT) into the music domain, enabling robust music representations that withstand noise. Unlike previous research, this approach involves an additional pretraining phase for the domain classifier, to avoid performance degradation in the subsequent phase. Adding various synthesized noisy music data improves the model's generalization across different noise levels. The proposed architecture demonstrates enhanced performance in music auto-tagging by effectively utilizing unlabeled noisy music data. Additional experiments with supplementary unlabeled data further improves the model's performance, underscoring its robust generalization capabilities and broad applicability."
-    }
-  ],
-
-  "education": [
-    {
-      "id": 0,
-      "name": "Kaywon Arts High School",
-      "period": ["2013. 03", "2016. 02"],
-      "description": "Major in Music Composition"
-    },
-    {
-      "id": 1,
-      "name": "Seoul National University",
-      "period": ["2016. 03", "2021. 08"],
-      "description": "B.S. in Musicology\nB.S. in Computer Science and Engineering"
-    },
-    {
-      "id": 2,
-      "name": "Seoul National University",
-      "period": ["2021. 09", "2023. 08"],
-      "description": "M.S. in Engineering"
     },
     {
       "id": 3,
-      "name": "Seoul National University",
-      "period": ["2023. 09", "Recent"],
-      "description": "Ph.D. Student in Engineering"
+      "name": "TokenSynth: A Token-based Neural Synthesizer for Instrument Cloning and Text-to-Instrument",
+      "webUrl": "https://arxiv.org/abs/2502.08939",
+      "author": "Kyungsu Kim, Junghyun Koo, Sungho Lee, Haesun Joung*, Kyogu Lee",
+      "conference": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025) (Poster)",
+      "stack": ["Music Auto-Tagging", "Domain Adversarial Training"],
+      "abstract": "Recent advancements in neural audio codecs have enabled the use of tokenized audio representations in various audio generation tasks, such as text-to-speech, text-to-audio, and text-to-music generation. Leveraging this approach, we propose TokenSynth, a novel neural synthesizer that utilizes a decoder-only transformer to generate desired audio tokens from MIDI tokens and CLAP (Contrastive Language-Audio Pretraining) embedding, which has timbre-related information. Our model is capable of performing instrument cloning, text-to-instrument synthesis, and text-guided timbre manipulation without any fine-tuning. This flexibility enables diverse sound design and intuitive timbre control. We evaluated the quality of the synthesized audio, the timbral similarity between synthesized and target audio/text, and synthesis accuracy (i.e., how accurately it follows the input MIDI) using objective measures. TokenSynth demonstrates the potential of leveraging advanced neural audio codecs and transformers to create powerful and versatile neural synthesizers. The source code, model weights, and audio demos are available at: https://github.com/KyungsuKim42/tokensynth"
     }
   ],
+
+  "teachingExperience": {
+    "id": 0,
+    "name": "Teaching Assistant",
+    "lecture": "Machine Listening (SNU M2680.002400)",
+    "period": ["2024. 09", "2024. 12"]
+  },
 
   "Music": [
     {

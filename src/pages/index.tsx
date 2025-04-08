@@ -60,14 +60,23 @@ export const getStaticProps = async () => {
     item: await getMd({ section: "information", item: { ...objectData.information } }),
   });
 
-  // const workExperienceWithData = objectData.workExperience.map(
-  //   async (item: WorkExperienceProps) => {
-  //     return getImgSrc({
-  //       section: "workExperience",
-  //       item: await getMd({ section: "workExperience", item }),
-  //     });
-  //   },
-  // );
+  const workExperienceWithData = objectData.workExperience.map(
+    async (item: WorkExperienceProps) => {
+      return getImgSrc({
+        section: "workExperience",
+        item: await getMd({ section: "workExperience", item }),
+      });
+    },
+  );
+
+  const teachingExperienceWithData = objectData.teachingExperience.map(
+    async (item: TeachingExperienceProps) => {
+      return getImgSrc({
+        section: "teachingExperience",
+        item: await getMd({ section: "teachingExperience", item }),
+      });
+    },
+  );
 
   const publicationsWithData = objectData.publications.map(async (item: PublicationsProps) => {
     return getImgSrc({ section: "publications", item: await getMd({ section: "publications", item }) });
@@ -77,7 +86,8 @@ export const getStaticProps = async () => {
     props: {
       ...objectData,
       information: await informationWithData,
-      // workExperience: await Promise.all(workExperienceWithData),
+      workExperience: await Promise.all(workExperienceWithData),
+      teachingExperience: await Promise.all(teachingExperienceWithData),
       publications: await Promise.all(publicationsWithData),
     },
   };
@@ -88,7 +98,7 @@ const getMd = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | PublicationsProps;
+  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps;
 }) => {
   try {
     const markdownModule = await import(
@@ -106,7 +116,7 @@ const getImgSrc = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | PublicationsProps;
+  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps;
 }) => {
   const imgSrc = `/images/${section}/${"id" in item ? item.id : "profile"}.png`;
   const filePath = path.join(process.cwd(), "public", imgSrc);

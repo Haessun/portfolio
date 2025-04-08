@@ -66,7 +66,7 @@ export interface DataProps {
     name: string;
     description: string;
     period: string[];
-    thesis?: string;
+    thesis: string;
     researchArea?: string;
   }[];
   certificate: {

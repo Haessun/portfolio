@@ -64,7 +64,7 @@ export const getStaticProps = async () => {
     async (item: WorkExperienceProps) => {
       return getImgSrc({
         section: "workExperience",
-        item: await getMd({ section: "workExperience", item }),
+        item: await getMd({ section: "workExperience", item: await getMd({ section: "workExperience", item }) }),
       });
     },
   );
@@ -73,7 +73,7 @@ export const getStaticProps = async () => {
     async (item: TeachingExperienceProps) => {
       return getImgSrc({
         section: "teachingExperience",
-        item: await getMd({ section: "teachingExperience", item }),
+        item: await getMd({ section: "teachingExperience", item: await getMd({ section: "teachingExperience", item }) }),
       });
     },
   );

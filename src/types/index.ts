@@ -64,9 +64,9 @@ export interface DataProps {
   education: {
     id: number;
     name: string;
-    description: string;
+    description?: string;
     period: string[];
-    thesis: string;
+    thesis?: string;
     researchArea?: string;
   }[];
   certificate: {

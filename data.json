@@ -39,12 +39,14 @@
     }
   ],
 
-  "workExperience": {
-    "id": 0,
-    "name": "Research Intern @ NAVER VIBE AI",
-    "period": ["2025. 01", "2025. 02"],
-    "description": "Music genre auto-tagging for tag noise reduction"
-  },
+  "workExperience": [
+      {
+        "id": 0,
+        "name": "Research Intern @ NAVER VIBE AI",
+        "period": ["2025. 01", "2025. 02"],
+        "description": "Music genre auto-tagging for tag noise reduction"
+      }
+  ],
 
   "publications": [
     {
@@ -86,12 +88,14 @@
     }
   ],
 
-  "teachingExperience": {
-    "id": 0,
-    "name": "Teaching Assistant",
-    "lecture": "Machine Listening (SNU M2680.002400)",
-    "period": ["2024. 09", "2024. 12"]
-  },
+  "teachingExperience": [
+    {
+      "id": 0,
+      "name": "Teaching Assistant",
+      "lecture": "Machine Listening (SNU M2680.002400)",
+      "period": ["2024. 09", "2024. 12"]
+    }
+  ],
 
   "Music": [
     {

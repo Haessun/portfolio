@@ -13,9 +13,9 @@ const EducationItem = ({ name, description, period, thesis, researchArea }: {
           <h4>{name}</h4>
           <span>{`${period[0]}${period[1] ? " - " + period[1] : ""}`}</span>
         </div>
-        <span className="whitespace-pre-wrap">{`${description}`}</span>
-        <span className="whitespace-pre-wrap">{`${thesis}`}</span>
-        <span className="whitespace-pre-wrap">{`${researchArea}`}</span>
+        {description && <span className="whitespace-pre-wrap">{description}</span>}
+        {thesis && <span className="whitespace-pre-wrap">{thesis}</span>}
+        {researchArea && <span className="whitespace-pre-wrap">{researchArea}</span>}
       </div>
     </div>
   );

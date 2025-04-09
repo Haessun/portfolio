@@ -6,7 +6,7 @@ import { DataProps } from "@/types";
 const TeachingExperience = ({ teachingExperience }: Pick<DataProps, "teachingExperience">) => {
   return (
     <div>
-      <SectionTitle>Work Experience</SectionTitle>
+      <SectionTitle>Teaching Experience</SectionTitle>
       <div className="flex flex-col gap-14">
         {[...teachingExperience].reverse().map((experience) => (
           <TeachingExperienceItem key={experience.id} {...experience} />

@@ -8,7 +8,7 @@ const Publications = ({ publications }: Pick<DataProps, "publications">) => {
     <>
       <div>
         <SectionTitle>Publications</SectionTitle>
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-14">
           {[...publications].reverse().map((project) => (
               <ProjectItem key={project.id} {...project} />
             ))}

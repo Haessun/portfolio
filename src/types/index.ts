@@ -61,7 +61,7 @@ export interface DataProps {
   publications: PublicationsProps[];
   workExperience: WorkExperienceProps[];
   teachingExperience: TeachingExperienceProps[];
-  professionalSocieties: ProfessionalSocietiesProps;
+  professionalSocieties: ProfessionalSocietiesProps[];
   activity: {
     id: number;
     name: string;

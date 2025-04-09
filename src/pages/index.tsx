@@ -11,9 +11,10 @@ import Publications from "@/components/Publications";
 import ResumeTitle from "@/components/ResumeTitle";
 import TeachingExperience from "@/components/TeachingExperience";
 import WorkExperience from "@/components/WorkExperience";
+import ProfessionalSocieties from "@/components/ProfessionalSocieties";
 
 // import ScrollProgress from "@/components/ScrollProgress";
-import { DataProps, InformationProps, PublicationsProps, WorkExperienceProps, TeachingExperienceProps } from "@/types";
+import { DataProps, InformationProps, PublicationsProps, WorkExperienceProps, TeachingExperienceProps, ProfessionalSocietiesProps } from "@/types";
 import Music from "@/components/Music";
 import AdditionalSkills from "@/components/AdditionalSkills/AdditionalSkills";
 
@@ -24,6 +25,7 @@ const Home: NextPage<DataProps> = ({
   education,
   workExperience,
   teachingExperience,
+  professionalSocieties,
   music,
 }) => {
   return (
@@ -38,6 +40,7 @@ const Home: NextPage<DataProps> = ({
         <Publications publications={publications} />
         {/* <Activity activity={activity} /> */}
         <TeachingExperience teachingExperience={teachingExperience} />
+        <ProfessionalSocieties professionalSocieties={professionalSocieties} />
 
         {/* <Certificate certificate={certificate} /> */}
         <AdditionalSkills />
@@ -82,12 +85,23 @@ export const getStaticProps = async () => {
     return getImgSrc({ section: "publications", item: await getMd({ section: "publications", item }) });
   });
 
+  const professionalSocietiesWithData = objectData.professionalSocieties.map(
+    async (item: ProfessionalSocietiesProps) => {
+      return getImgSrc({
+        section: "professionalSocieties",
+        item: await getMd({ section: "professionalSocieties", item: await getMd({ section: "professionalSocieties", item }) }),
+      });
+    }
+  );
+  
+
   return {
     props: {
       ...objectData,
       information: await informationWithData,
       workExperience: await Promise.all(workExperienceWithData),
       teachingExperience: await Promise.all(teachingExperienceWithData),
+      professionalSocieties: await Promise.all(professionalSocietiesWithData),
       publications: await Promise.all(publicationsWithData),
     },
   };
@@ -98,7 +112,7 @@ const getMd = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps;
+  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps | ProfessionalSocietiesProps;
 }) => {
   try {
     const markdownModule = await import(
@@ -116,7 +130,7 @@ const getImgSrc = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps;
+  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps | ProfessionalSocietiesProps;
 }) => {
   const imgSrc = `/images/${section}/${"id" in item ? item.id : "profile"}.png`;
   const filePath = path.join(process.cwd(), "public", imgSrc);

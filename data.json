@@ -63,7 +63,7 @@
       "id": 1,
       "name": "Towards a New Interface for Music Listening: A User Experience Study on YouTube",
       "webUrl": "https://arxiv.org/abs/2307.14718",
-      "author": "Ahyeon Choi, Eunsik Shin, Haesun Joung*, Joongseek Lee and Kyogu Lee",
+      "author": "Ahyeon Choi, Eunsik Shin, Haesun Joung, Joongseek Lee and Kyogu Lee",
       "conference": "24th International Society for Music Information Retrieval Conference (ISMIR 2023) (Oral, Poster)",
       "stack": ["Music", "HCI"],
       "abstract": "In light of the enduring success of music streaming services, it is noteworthy that an increasing number of users are positively gravitating toward YouTube as their preferred platform for listening to music. YouTube differs from typical music streaming services in that they provide a diverse range of music-related videos as well as soundtracks. However, despite the increasing popularity of using YouTube as a platform for music consumption, there is still a lack of comprehensive research on this phenomenon. As independent researchers unaffiliated with YouTube, we conducted semi-structured interviews with 27 users who listen to music through YouTube more than three times a week to investigate its usability and interface satisfaction. Our qualitative analysis found that YouTube has five main meanings for users as a music streaming service: 1) exploring musical diversity, 2) sharing unique playlists, 3) providing visual satisfaction, 4) facilitating user interaction, and 5) allowing free and easy access. We also propose wireframes of a video streaming service for better audio-visual music listening in two stages: search and listening. By these wireframes, we offer practical solutions to enhance user satisfaction with YouTube for music listening. These findings have wider implications beyond YouTube and could inform enhancements in other music streaming services as well."
@@ -79,9 +79,27 @@
     },
     {
       "id": 3,
+      "name": "The Impact of Visual Information in Speech Perception for Individuals with Hearing Loss: A Mini Review",
+      "webUrl": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1399084/full",
+      "author": "Ahyeon Choi, Hayoon Kim, Mina Jo, Subeen Kim, Haesun Joung, Inyong Choi, Kyogu Lee",
+      "conference": "Frontiers in psychology 15, 1399084",
+      "stack": ["Speech Perception", "Hearing Loss", "Cochlear Implant", "Visual Information", "Cross-Modal Plasticity", "Multisensory Integration", "Age-Related Variation", "Linguistic Level"],
+      "abstract": "This review examines how visual information enhances speech perception in individuals with hearing loss, focusing on the impact of age, linguistic stimuli, and specific hearing loss factors on the effectiveness of audiovisual (AV) integration. While existing studies offer varied and sometimes conflicting findings regarding the use of visual cues, our analysis shows that these key factors can distinctly shape AV speech perception outcomes. For instance, younger individuals and those who receive early intervention tend to benefit more from visual cues, particularly when linguistic complexity is lower. Additionally, languages with dense phoneme spaces demonstrate a higher dependency on visual information, underscoring the importance of tailoring rehabilitation strategies to specific linguistic contexts. By considering these influences, we highlight areas where understanding is still developing and suggest how personalized rehabilitation strategies and supportive systems could be tailored to better meet individual needs. Furthermore, this review brings attention to important aspects that warrant further investigation, aiming to refine theoretical models and contribute to more effective, customized approaches to hearing rehabilitation."
+    },
+    {
+      "id": 4,
+      "name": "Optimizing Music Captioning with Reinforcement Learning and Retrieval-Augmented Methods",
+      "webUrl": "https://ismir2024program.ismir.net/lbd_429.html",
+      "author": "Haesun Joung, Jinwoo Lee, Kyogu Lee",
+      "conference": "25th International Society for Music Information Retrieval Conference (ISMIR 2024) (Late-Breaking Demo)",
+      "stack": ["Music Captioning", "Reinforcement Learning", "Retrieval-Augmented Generation"],
+      "abstract": "Music captioning, the task of generating natural language descriptions for musical audio, often faces challenges due to the limited availability of paired music-caption datasets, largely caused by copyright constraints. In this study, we explore a Retrieval-Augmented Generation (RAG) approach to address this issue by retrieving relevant captions from a large datastore using an efficient similarity search. To improve the alignment between generated captions and audio, we incorporate semantic loss, which uses a reward function based on reinforcement learning to optimize the semantic consistency between the generated caption and the reference caption. Additionally, we employ Llama-3.1, a large language model, to enhance the quality of the generated captions. This method enhances semantic consistency and improves the linguistic accuracy of generated captions, contributing to advancements in music information retrieval (MIR) applications."
+    },
+    {
+      "id": 5,
       "name": "TokenSynth: A Token-based Neural Synthesizer for Instrument Cloning and Text-to-Instrument",
       "webUrl": "https://arxiv.org/abs/2502.08939",
-      "author": "Kyungsu Kim, Junghyun Koo, Sungho Lee, Haesun Joung*, Kyogu Lee",
+      "author": "Kyungsu Kim, Junghyun Koo, Sungho Lee, Haesun Joung, Kyogu Lee",
       "conference": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025) (Poster)",
       "stack": ["Music Auto-Tagging", "Domain Adversarial Training"],
       "abstract": "Recent advancements in neural audio codecs have enabled the use of tokenized audio representations in various audio generation tasks, such as text-to-speech, text-to-audio, and text-to-music generation. Leveraging this approach, we propose TokenSynth, a novel neural synthesizer that utilizes a decoder-only transformer to generate desired audio tokens from MIDI tokens and CLAP (Contrastive Language-Audio Pretraining) embedding, which has timbre-related information. Our model is capable of performing instrument cloning, text-to-instrument synthesis, and text-guided timbre manipulation without any fine-tuning. This flexibility enables diverse sound design and intuitive timbre control. We evaluated the quality of the synthesized audio, the timbral similarity between synthesized and target audio/text, and synthesis accuracy (i.e., how accurately it follows the input MIDI) using objective measures. TokenSynth demonstrates the potential of leveraging advanced neural audio codecs and transformers to create powerful and versatile neural synthesizers. The source code, model weights, and audio demos are available at: https://github.com/KyungsuKim42/tokensynth"

@@ -93,7 +93,7 @@ export const getStaticProps = async () => {
       information: await informationWithData,
       workExperience: await Promise.all(workExperienceWithData),
       teachingExperience: await Promise.all(teachingExperienceWithData),
-      professionalSocieties: await Promise.all(professionalSocietiesWithData),
+      professionalSocieties: professionalSocietiesWithData,
       publications: await Promise.all(publicationsWithData),
     },
   };

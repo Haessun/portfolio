@@ -92,8 +92,7 @@ export const getStaticProps = async () => {
         item: await getMd({ section: "professionalSocieties", item: await getMd({ section: "professionalSocieties", item }) }),
       });
     }
-  );
-  
+  );  
 
   return {
     props: {

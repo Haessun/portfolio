@@ -85,14 +85,7 @@ export const getStaticProps = async () => {
     return getImgSrc({ section: "publications", item: await getMd({ section: "publications", item }) });
   });
 
-  const professionalSocietiesWithData = objectData.professionalSocieties.map(
-    async (item: ProfessionalSocietiesProps) => {
-      return getImgSrc({
-        section: "professionalSocieties",
-        item: await getMd({ section: "professionalSocieties", item: await getMd({ section: "professionalSocieties", item }) }),
-      });
-    }
-  );  
+  const professionalSocietiesWithData = objectData.professionalSocieties;
 
   return {
     props: {

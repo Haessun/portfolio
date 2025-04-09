@@ -115,6 +115,17 @@
     }
   ],
 
+  "professionalSocieties": {
+    "review": [
+      "International Computer Music Conference (ICMC 2025)"
+    ],
+    "membership": [
+      "Cognitive Science Society (CSS)",
+      "IEEE Signal Processing Society (IEEE SPS)",
+      "International Speech Communication Association (ISCA)"
+    ]
+  },
+
   "Music": [
     {
       "id": 0,

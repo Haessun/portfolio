@@ -19,8 +19,10 @@ const WorkExperienceItem = ({name, period, description, imgSrc}: WorkExperienceP
       {/* 텍스트 */}
       <div>
         <h4>{name}</h4>
-        <p className="text-gray-500">{`${period[0]} - ${period[1]}`}</p>
         <p className="text-gray-700">{description}</p>
+        <div className="flex justify-between items-center w-full">
+          <p className="text-gray-500">{`${period[0]} - ${period[1]}`}</p>
+        </div>
       </div>
     </div>
   );

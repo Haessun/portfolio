@@ -1,17 +1,18 @@
 import SectionTitle from "../SectionTitle";
 import ProfessionalSocietiesItem from "./ProfessionalSocietiesItem";
-
 import { DataProps } from "@/types";
 
-const ProfessionalSocieties = ({ professionalSocieties }: Pick<DataProps, "professionalSocieties">) => {
+import { ProfessionalSocietiesProps } from "@/types";
+
+const ProfessionalSocieties = ({
+  professionalSocieties,
+}: {
+  professionalSocieties: ProfessionalSocietiesProps;
+}) => {
   return (
     <div>
       <SectionTitle>Professional Societies</SectionTitle>
-      <div className="flex flex-col gap-14">
-        {[...professionalSocieties].reverse().map((experience) => (
-          <ProfessionalSocietiesItem key={experience.id} {...experience} />
-        ))}
-      </div>
+      <ProfessionalSocietiesItem {...professionalSocieties} />
     </div>
   );
 };

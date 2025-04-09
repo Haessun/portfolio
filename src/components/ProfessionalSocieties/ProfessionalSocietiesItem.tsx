@@ -1,5 +1,6 @@
 import { ProfessionalSocietiesProps } from "@/types";
 
+
 const ProfessionalSocietiesItem = ({ review, membership }: ProfessionalSocietiesProps) => {
   return (
     <div className="flex flex-col gap-4 text-sm">

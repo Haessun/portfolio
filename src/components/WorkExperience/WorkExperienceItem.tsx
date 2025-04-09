@@ -32,26 +32,26 @@
 import Image from "next/image";
 import { WorkExperienceProps } from "@/types";
 
-const WorkExperienceItem = ({ name, position, period, markdown, imgSrc }: WorkExperienceProps) => {
+const WorkExperienceItem = ({ name, position, period, markdown, description, imgSrc }: WorkExperienceProps) => {
   return (
     <div className="flex items-start gap-4 mb-6">
       {/* 이미지 */}
       {imgSrc && (
-        <div className="w-16 h-16 relative flex-shrink-0">
+        <div className="w-24 h-24 relative flex-shrink-0">
           <Image
             src={imgSrc}
             fill
             alt={name}
-            className="object-contain rounded-md border border-gray-300"
+            className="object-contain rounded-md"
           />
         </div>
       )}
 
       {/* 텍스트 */}
       <div>
-        <h3 className="font-semibold leading-tight">{position}</h3>
-        <p className="text-sm text-gray-700 italic">{name}</p>
-        <p className="text-sm text-gray-500">{`${period[0]} - ${period[1]}`}</p>
+        <h4>{name}</h4>
+        <p className="text-gray-500">{`${period[0]} - ${period[1]}`}</p>
+        <p className="text-gray-700">{description}</p>
       </div>
     </div>
   );

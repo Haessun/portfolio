@@ -108,12 +108,12 @@ const boldName = (text: string, name: string) => {
 };
 
 const ProjectItem = ({ year, items }: { year: string; items: PublicationsProps[] }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="flex flex-col gap-4">
       <button
-        className="text-xl font-semibold text-left hover:underline"
+        className="text-2xl font-semibold text-left hover:underline"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? "▼" : "▶"} {year}
@@ -161,7 +161,7 @@ const PublicationItem = ({
           />
         )}
         <div className="flex flex-col gap-2">
-          <h4>{name}</h4>
+          <h5>{name}</h5>
           <div className="flex flex-col">
             <span>
               <ReactMarkdown remarkPlugins={[remarkGfm]}>

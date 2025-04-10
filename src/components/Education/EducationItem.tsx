@@ -57,7 +57,7 @@ const EducationItem = ({
   const [title, school] = name.split(" @ ");
 
   return (
-    <div className="mb-3">
+    <div className="mb-2">
       {/* Header with degree/school + right-aligned period */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
         <div className="flex flex-col">

@@ -45,6 +45,9 @@ module.exports = {
          */
         GRADIENT_TO: "#CF8BF3",
       },
+      fontSize: {
+        '2.5xl': '1.625rem', // 26px (중간값, 2xl=24px, 3xl=30px)
+      },
     },
   },
   plugins: [],

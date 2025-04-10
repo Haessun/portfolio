@@ -12,7 +12,8 @@
   }
 
   h3 {
-    @apply font-semibold text-3xl;
+    /* @apply font-semibold text-3xl; */
+    @apply font-semibold text-2.5xl;
   }
 
   h4 {

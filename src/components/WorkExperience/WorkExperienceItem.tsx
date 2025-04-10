@@ -17,12 +17,14 @@ const WorkExperienceItem = ({name, period, description, imgSrc}: WorkExperienceP
       )}
 
       {/* 텍스트 */}
-      <div>
-        <h4>{name}</h4>
-        <p className="text-gray-700">{description}</p>
-        <div className="flex justify-between items-center w-full">
-          <p className="text-gray-500">{`${period[0]} - ${period[1]}`}</p>
+      <div className="flex flex-col gap-1 w-full">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+          <h4 className="h4-5">{name}</h4>
+          <p className="text-sm text-gray-500 md:text-right md:mt-0 mt-1 whitespace-nowrap leading-none">
+            {`${period[0]}${period[1] ? " - " + period[1] : ""}`}
+          </p>
         </div>
+        <p className="text-gray-700">{description}</p>
       </div>
     </div>
   );

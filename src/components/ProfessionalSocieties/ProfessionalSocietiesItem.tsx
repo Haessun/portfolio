@@ -5,7 +5,7 @@ const ProfessionalSocietiesItem = ({ review, membership }: ProfessionalSocieties
   return (
     <div className="flex flex-col gap-4 text-sm">
       <div>
-        <h5 className="font-semibold border-b border-dotted border-blue-200 mb-1">
+        <h5 className="font-semibold border-b border-dotted border-gray-200 mb-1">
           Academic Paper Reviewer
         </h5>
         <ul className="list-disc list-inside">
@@ -16,7 +16,7 @@ const ProfessionalSocietiesItem = ({ review, membership }: ProfessionalSocieties
       </div>
 
       <div>
-        <h5 className="font-semibold border-b border-dotted border-blue-200 mb-1">
+        <h5 className="font-semibold border-b border-dotted border-gray-200 mb-1">
           Membership
         </h5>
         <ul className="list-disc list-inside">

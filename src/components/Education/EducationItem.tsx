@@ -95,3 +95,5 @@ const EducationItem = ({
     </div>
   );
 };
+
+export default EducationItem;

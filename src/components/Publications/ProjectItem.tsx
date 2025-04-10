@@ -179,9 +179,15 @@ const PublicationItem = ({
             )}
             <div className="flex gap-1 flex-wrap">
               {stack.map((stack) => (
+                // <span
+                //   key={stack}
+                //   className="bg-BLACK dark:bg-white py-[2px] px-1.5 rounded-md text-xs font-medium font-mono whitespace-nowrap text-white dark:text-BLACK"
+                // >
+                //   {stack}
+                // </span>
                 <span
                   key={stack}
-                  className="bg-BLACK dark:bg-white py-[2px] px-1.5 rounded-md text-xs font-medium font-mono whitespace-nowrap text-white dark:text-BLACK"
+                  className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 py-[2px] px-1.5 rounded-md text-xs font-medium font-mono whitespace-nowrap"
                 >
                   {stack}
                 </span>
@@ -206,7 +212,7 @@ const PublicationItem = ({
         </div>
       </div>
       {isAbstractVisible && (
-        <div className="md:border-GRAY_LIGHT md:border-solid md:border-t-[1px] md:pt-4 markdown flex flex-col w-full gap-2">
+        <div className="md:border-GRAY_LIGHT md:border-solid md:border-t-[1px] md:pt-1 markdown flex flex-col w-full gap-2">
           <blockquote className="whitespace-pre-wrap">{abstract}</blockquote>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {markdown ?? ""}

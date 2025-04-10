@@ -12,7 +12,7 @@ const EducationItem = ({ name, description, period, thesis, researchArea }: {
     <div className="flex flex-col md:flex-row gap-2 md:gap-1 mb-1">
       <div className="flex flex-col gap-1">
         <div className="flex flex-col">
-          <h4>
+          <h4 className="h4-5">
             {title}
             {school && (
               <span className="ml-1 text-sm italic text-gray-500">@ {school}</span>

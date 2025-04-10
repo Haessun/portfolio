@@ -46,6 +46,7 @@ module.exports = {
         GRADIENT_TO: "#CF8BF3",
       },
       fontSize: {
+        '1.5xl': '1.375rem', // 22px (중간값: xl=20px, 2xl=24px)
         '2.5xl': '1.625rem', // 26px (중간값, 2xl=24px, 3xl=30px)
       },
     },

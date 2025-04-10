@@ -12,12 +12,19 @@
   }
 
   h3 {
-    /* @apply font-semibold text-3xl; */
+    @apply font-semibold text-3xl;
+  }
+
+  .h3-5 {
     @apply font-semibold text-2.5xl;
   }
 
   h4 {
     @apply font-semibold text-2xl;
+  }
+
+  .h4-5 {
+    @apply font-semibold text-1.5xl;
   }
 
   h5 {

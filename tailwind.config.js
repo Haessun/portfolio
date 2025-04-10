@@ -47,7 +47,7 @@ module.exports = {
       },
       fontSize: {
         '1.5xl': '1.175rem', 
-        '2.5xl': '1.625rem', // 26px (중간값, 2xl=24px, 3xl=30px)
+        '2.5xl': '1.525rem', // 26px (중간값, 2xl=24px, 3xl=30px)
       },
     },
   },

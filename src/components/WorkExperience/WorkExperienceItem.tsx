@@ -6,7 +6,7 @@ const WorkExperienceItem = ({name, period, description, imgSrc}: WorkExperienceP
     <div className="flex items-start gap-4 mb-6">
       {/* 이미지 */}
       {imgSrc && (
-        <div className="w-24 h-24 relative flex-shrink-0">
+        <div className="w-20 h-20 relative flex-shrink-0">
           <Image
             src={imgSrc}
             fill

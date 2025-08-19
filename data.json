@@ -45,6 +45,12 @@
         "name": "Research Intern @ NAVER VIBE AI",
         "period": ["2025. 01", "2025. 02"],
         "description": "Music genre auto-tagging for tag noise reduction"
+      },
+      {
+        "id": 1,
+        "name": "Research Intern @ SonyCSL",
+        "period": ["2025. 05", "2025. 07"],
+        "description": "Perceptual and Multi-dimensional Music Similarity-Based Retrieval"
       }
   ],
 
@@ -107,6 +113,7 @@
     {
       "id": 6,
       "name": "Exploring the Speech-to-Song Illusion: A Comparative Study of Standard Korean and Dialects",
+      "webUrl": "https://escholarship.org/uc/item/59n9j0gq",
       "author": "Haesun Joung, Ahyeon Choi, Kyogu Lee",
       "conference": "Cognitive Science Society (CogSci 2025) (Poster, Full paper publication)",
       "stack": ["Auditory Illusion", "Speech-to-Song Illusion", "Tonal and Non-Tonal Languages", "Korean Dialects"],

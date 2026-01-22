@@ -5,9 +5,9 @@ const LeadershipExperienceItem = ({ name, lecture, period }: LeadershipExperienc
     <div className="flex flex-col mb-2 text-sm">
       <h5 style={{ fontSize: '15px' }}>{lecture}</h5>
 
-      <div className="grid grid-cols-[1fr_auto] gap-4 w-full">
+      <div className="grid grid-cols-[1fr_160px] gap-4 w-full">
         <span className="break-words">{name}</span>
-        <span className="text-gray-500 whitespace-nowrap">
+        <span className="text-gray-500 whitespace-nowrap text-right">
           {period.length === 1 ? period[0] : `${period[0]} - ${period[1]}`}
         </span>
       </div>

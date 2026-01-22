@@ -3,7 +3,7 @@ import { LeadershipExperienceProps } from "@/types";
 const LeadershipExperienceItem = ({ name, lecture, period }: LeadershipExperienceProps) => {
   return (
     <div className="flex flex-col mb-1 text-sm">
-      <h5 style={{ fontSize: '16px' }}>{lecture}</h5>
+      <h5>{lecture}</h5>
 
       <div className="grid grid-cols-[1fr_160px] gap-4 w-full">
         <span className="break-words italic">{name}</span>

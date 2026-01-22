@@ -1,5 +1,5 @@
 import SectionTitle from "../SectionTitle";
-import TeachingExperienceItem from "./LeadershipExperienceItem";
+import LeadershipExperienceItem from "./LeadershipExperienceItem";
 
 import { DataProps } from "@/types";
 

@@ -14,9 +14,10 @@ import WorkExperience from "@/components/WorkExperience";
 import ProfessionalSocieties from "@/components/ProfessionalSocieties";
 
 // import ScrollProgress from "@/components/ScrollProgress";
-import { DataProps, InformationProps, PublicationsProps, WorkExperienceProps, TeachingExperienceProps, ProfessionalSocietiesProps } from "@/types";
+import { DataProps, InformationProps, PublicationsProps, WorkExperienceProps, TeachingExperienceProps, LeadershipExperienceProps, ProfessionalSocietiesProps } from "@/types";
 import Music from "@/components/Music";
 import AdditionalSkills from "@/components/AdditionalSkills/AdditionalSkills";
+import LeadershipExperience from "@/components/LeadershipExperience";
 
 const Home: NextPage<DataProps> = ({
   resumeTitle,
@@ -25,6 +26,7 @@ const Home: NextPage<DataProps> = ({
   education,
   workExperience,
   teachingExperience,
+  leadershipExperience,
   professionalSocieties,
   music,
 }) => {
@@ -40,6 +42,7 @@ const Home: NextPage<DataProps> = ({
         <Publications publications={publications} />
         {/* <Activity activity={activity} /> */}
         <TeachingExperience teachingExperience={teachingExperience} />
+        <LeadershipExperience leadershipExperience={leadershipExperience} />
         <ProfessionalSocieties professionalSocieties={professionalSocieties} />
 
         {/* <Certificate certificate={certificate} /> */}
@@ -81,6 +84,15 @@ export const getStaticProps = async () => {
     },
   );
 
+  const leadershipExperienceWithData = objectData.leadershipExperience.map(
+    async (item: LeadershipExperienceProps) => {
+      return getImgSrc({
+        section: "leadershipExperience",
+        item: await getMd({ section: "leadershipExperience", item: await getMd({ section: "leadershipExperience", item }) }),
+      });
+    },
+  );
+
   const publicationsWithData = objectData.publications.map(async (item: PublicationsProps) => {
     return getImgSrc({ section: "publications", item: await getMd({ section: "publications", item }) });
   });
@@ -93,6 +105,7 @@ export const getStaticProps = async () => {
       information: await informationWithData,
       workExperience: await Promise.all(workExperienceWithData),
       teachingExperience: await Promise.all(teachingExperienceWithData),
+      leadershipExperience: await Promise.all(leadershipExperienceWithData),
       professionalSocieties: professionalSocietiesWithData,
       publications: await Promise.all(publicationsWithData),
     },
@@ -104,7 +117,7 @@ const getMd = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps | ProfessionalSocietiesProps;
+  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps | LeadershipExperienceProps | ProfessionalSocietiesProps;
 }) => {
   try {
     const markdownModule = await import(
@@ -122,7 +135,7 @@ const getImgSrc = async ({
   item,
 }: {
   section: string;
-  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps | ProfessionalSocietiesProps;
+  item: InformationProps | PublicationsProps | WorkExperienceProps | TeachingExperienceProps | LeadershipExperienceProps | ProfessionalSocietiesProps;
 }) => {
   const imgSrc = `/images/${section}/${"id" in item ? item.id : "profile"}.png`;
   const filePath = path.join(process.cwd(), "public", imgSrc);

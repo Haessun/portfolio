@@ -25,6 +25,16 @@ export interface TeachingExperienceProps {
   imgSrc?: string;
 }
 
+export interface LeadershipExperienceProps {
+  id: number;
+  name: string;
+  lecture: string;
+  position: string;
+  period: string[];
+  markdown?: string;
+  imgSrc?: string;
+}
+
 export interface ProfessionalSocietiesProps {
   id: number;
   review: string[];
@@ -61,6 +71,7 @@ export interface DataProps {
   publications: PublicationsProps[];
   workExperience: WorkExperienceProps[];
   teachingExperience: TeachingExperienceProps[];
+  leadershipExperience: LeadershipExperienceProps[];
   professionalSocieties: ProfessionalSocietiesProps;
   activity: {
     id: number;

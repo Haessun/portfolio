@@ -141,6 +141,24 @@
     ]
   },
 
+  "leadershipExperience": [
+    { "id": 0,
+      "name": "Student Council, Department of Musicology",
+      "period": ["2017. 03", "2028. 02"],
+      "description": "Student President"
+    },
+    { "id": 1,
+      "name": "TEDxSNU 14th Event, External Collaboration Team",
+      "period": ["2017. 11", "2018. 03"],
+      "description": "Event Organizer, Coordinated sponsorships and partnerships with multiple organizations to successfully execute the event themed \"Sense: The Way We Perceive the World\"  (\"감: 세상을 느끼는 방식.\")"
+    },
+    { "id": 2,
+      "name": "Korean Society of Western Music, Annual Conference",
+      "period": ["2024. 05"],
+      "description": "Group Presenter for \"Role of Generative AI in Music Studies and Appreciation\" Collaborated with colleagues to present research findings at the 94th annual conference."
+    }
+  ],
+
   "Music": [
     {
       "id": 0,
